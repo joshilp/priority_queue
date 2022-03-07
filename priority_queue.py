@@ -8,6 +8,7 @@ class PriorityQueue:
     Max Heap is represented as list (self.queue) where the root element is stored in self.queue[0],
     and children are stored in self.queue[i], where i > 0.
     """
+
     def __init__(self) -> None:
         self.queue = []
 
@@ -114,7 +115,8 @@ class PriorityQueue:
         :return: None
         """
         if not isinstance(node, dict) or not all(['priority' in node, 'command' in node]):
-            raise ValueError("Expected node of type dict: {'priority': int, 'command': <function>}")
+            raise ValueError(
+                "Expected node of type dict: {'priority': int, 'command': <function>}")
         if not callable(node.get('command')):
             raise TypeError(f"No callable command found in node: {node}")
         self.queue.append(node)
@@ -122,7 +124,8 @@ class PriorityQueue:
 
     def insert_nodes(self, nodes: list) -> None:
         if not isinstance(nodes, list):
-            raise ValueError("Expected list of nodes: [{'priority': int, 'command': <function>}, ...]")
+            raise ValueError(
+                "Expected list of nodes: [{'priority': int, 'command': <function>}, ...]")
         for node in nodes:
             self.insert_node(node)
 
@@ -179,41 +182,3 @@ class PriorityQueue:
         if child_index != index:
             self.swap_nodes(index, child_index)
             self.heapify_down(child_index)
-
-
-def print_test():
-    print('test')
-
-
-if __name__ == '__main__':
-    import unittest
-    q = PriorityQueue()
-    nodes = [
-        {'priority': 1, 'command': print_test},
-        {'priority': 10, 'command': print_test},
-        {'priority': 10, 'command': print_test},
-        {'priority': 3, 'command': print_test},
-        {'priority': 3, 'command': print_test},
-        {'priority': 4, 'command': print_test},
-        {'priority': 6, 'command': print_test},
-        {'priority': 0, 'command': print_test}
-    ]
-    q.insert_nodes(nodes)
-    # for i in q.queue:
-    #     print(i)
-    print(q.queue)
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    q.exec_next_command()
-    print(q.queue)
