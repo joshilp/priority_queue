@@ -6,6 +6,45 @@ Implement a simple priority queue. Assume an incoming stream of dictionaries con
 **Solution:**  
 Priority Queue implemented in `priority_queue.py` as a `Binary Max Heap`.
 
+**Usage:**
+Import and instantiate `priority_queue`:
+
+```
+pq = PriorityQueue()
+```
+
+Add list of nodes (dict) containing the `priority` value and `command` function:
+
+```
+nodes = [
+    {'priority': 1, 'command': <function>},
+    {'priority': 10, 'command': <function>},
+    {'priority': 5, 'command': <function>},
+]
+pq.insert_nodes(nodes)
+```
+
+Alternatively, you can add a single node:
+
+```
+node = {'priority': 5, 'command': <function>}
+pq.insert_node(nodes)
+```
+
+Pop the highest priority node:
+
+```
+node = pq.pop_priority_node()
+print(node)
+>> {'priority': 10, 'command': <function>}
+```
+
+Or pop highest priority node and execute command:
+
+```
+pq.exec_next_command()
+```
+
 # Questions
 
 ### 1. Please explain Big-O notation in simple terms.
