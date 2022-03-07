@@ -65,7 +65,7 @@ The number of steps needed to solve a problem, which can grow depending on the s
 
 I had a recent interaction with someone who wasn't receiving emails with attachments in their Outlook. Removing technical jargon and using an analogy I explained:
 
-"Sending an email is like sending a an envelope with a letter. That envelope with a single paged letter takes up a relatively small amount of space. An envelope with lots of photos takes up even more space.
+"Sending an email is like sending an envelope with a letter. That envelope with a single paged letter takes up a relatively small amount of space. An envelope with lots of photos takes up even more space.
 
 That envelope is sent from the sender to the postal service and put in a box. Anything put in that box is automatically sent to you, but that box has limited space. If that box is almost full, it might only fit envelope with a single letter instead of one with lots of photos. If the mail is too big to fit, then it's not stored in the box and not sent to you.
 
