@@ -1,3 +1,11 @@
+# Priority Queue
+
+**Problem:**  
+Implement a simple priority queue. Assume an incoming stream of dictionaries containing two keys; command to be executed and priority. Priority is an integer value [0, 10], where work items of the same priority are processed in the order they are received.
+
+**Solution:**  
+Priority Queue implemented in `priority_queue.py` as a `Binary Max Heap`.
+
 # Questions
 
 ### 1. Please explain Big-O notation in simple terms.
@@ -23,5 +31,3 @@ I had a recent interaction with someone who wasn't receiving emails with attachm
 That envelope is sent from the sender to the postal service and put in a box. Anything put in that box is automatically sent to you, but that box has limited space. If that box is almost full, it might only fit envelope with a single letter instead of one with lots of photos. If the mail is too big to fit, then it's not stored in the box and not sent to you.
 
 You should call the internet company and ask them to check if your box is full." This made enough sense for them to call their ISP and immediately resolve the issue.
-
-### 4. Implement a simple priority queue. Assume an incoming stream of dictionaries containing two keys; command to be executed and priority. Priority is an integer value [0, 10], where work items of the same priority are processed in the order they are received.
