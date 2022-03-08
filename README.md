@@ -54,12 +54,13 @@ The number of steps needed to solve a problem, which can grow depending on the s
 ### 2. What are the most important things to look for when reviewing another team member's code?
 
 - Check if code solves the initially defined problem, and if it could potentially cause other issues.
-- Check if the code is legible and intuitive without having to read comments and documentation. If not, check if documention exits.
-- Check if code follows DRY, low coupling, and high cohesion princicples.
+- Check if the code is legible and intuitive without having to read comments and documentation. If not, check if documentation exists.
+- Check if code follows DRY, low coupling, and high cohesion principles.
 - Check if code follows the style guide of the programming language (ex: PEP 8).
 - Check how code handles errors and exceptions, and if there is sufficient logging.
-- Check security of code. Ex) Is the author commiting important API keys?
+- Check security of code. Ex) Is the author committing important API keys?
 - Check if merge request has details about the problem and how the code solves those problems.
+- If a function is used from an outside source is used
 
 ### 3. Describe a recent interaction with someone who was non-technical. What did you need to communicate and how did you do it?
 
